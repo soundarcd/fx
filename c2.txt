@@ -1,0 +1,5 @@
+CM is a suite of applications designed for insurance providers, employers, and users.
+CM Provider: A portal for insurance providers to receive and maintain referrals, manage claims, maintain patient records, track claim histories, and take surveys.
+CM Client: A platform for employers to search, compare, and purchase CMC insurance plans based on various offerings from providers.
+CM Claims Portal: A user-friendly interface for policyholders to initiate, submit, and manage their claims efficiently. It providers data such as claims, notifications, and provider contacts.
+In addition to the three consumer-facing applications, there are batch-processing applications that streamline document preparation and management.
