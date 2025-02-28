@@ -1,2 +1,11 @@
-The system undergoes enterprise-level vulnerability scanning and code-level security scans.
-There is no available information on network-level or application-level penetration testing, posing potential security risks.
+Containerization & Deployment:
+All three CM applications should be containerized and deployed to Azure Kubernetes Service (AKS) for improved scalability and management.
+Horizontal scalability can be fully leveraged if shared session management is implemented, eliminating the need for sticky sessions.
+API Modernization:
+API gateways should be introduced to manage and secure API traffic after a clear separation of backend and frontend services.
+Database Modernization:
+The self-managed Microsoft SQL Server should be migrated to a managed SQL Server instance, ensuring better availability, automated maintenance, and security compliance.
+Regular backups should align with Recovery Point Objectives (RPO) to prevent data loss.
+Oracle Database Migration:
+The on-prem Oracle database should be migrated to a self-managed Oracle instance in the cloud.
+Active-passive replication should be implemented to maintain high availability, eliminating the need to connect from the cloud to an on-premises database.
