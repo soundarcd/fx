@@ -1,19 +1,16 @@
-Environment Segregation:
+Data Management Gaps:
 
-There is no clear indication that production and non-production environments are segregated into separate networks.
-It is recommended to establish dedicated VNets for production and non-production environments to enhance security and isolation.
-Infrastructure Monitoring:
+There are no defined data backup policies, posing a risk to data availability and recovery.
+There are no data retention policies in place, leading to uncontrolled data accumulation.
+Data Growth & Volume:
 
-The infrastructure should be monitored using Azure-native monitoring tools or a solution recommended by ARB (Architecture Review Board) for better visibility and compliance.
-Traffic Management & Security:
+The data size is in terabytes (TB), with records dating back 30 years.
+The data is expected to grow at a rate of 30% year over year (YoY), increasing storage demands and potential performance risks.
 
-It is recommended to integrate Azure Load Balancer, Azure Front Door, and Web Application Firewall (WAF) to improve traffic distribution, security, and global reachability.
+Establish Data Backup Policies:
 
+Define data backup policies aligned with business continuity planning (BCP) to ensure data availability, recovery, and resilience against failures.
+Implement Data Retention Policies:
 
-
-Load Balancing:
-
-Each application endpoint is managed by a dedicated F5 load balancer instance, ensuring efficient traffic distribution and high availability.
-CI/CD Infrastructure:
-
-The Jenkins servers are hosted on an on-premises managed Kubernetes cluster, providing containerized CI/CD execution with centralized management.
+Define data retention policies to purge or archive old data, reducing storage growth and improving system performance.
+Proper data retention will also help minimize legal liabilities associated with PII, ensuring compliance with regulatory requirements.
