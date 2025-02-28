@@ -1,3 +1,4 @@
-CM applications handle PHI and PII data and must adhere to HIPAA compliance standards to ensure data security and privacy.
-The existence of security scanning steps in Jenkins jobs is unknown and is assumed to be nonexistent, posing a potential risk.
-The Jenkins server for the production environment is not isolated from non-production environments, increasing the risk of unauthorized access and deployment inconsistencies.
+A separate Jenkins setup for the production environment is crucial to ensure proper isolation and security.
+When migrating CI/CD to GitHub Actions Workflow, it is essential to use self-hosted runners with a dedicated pool for production jobs to maintain strict separation.
+CI jobs should incorporate Static Application Security Testing (SAST) and Software Composition Analysis (SCA) to identify vulnerabilities early in the development process.
+Runtime vulnerability scanning must be implemented to detect zero-day vulnerabilities and enhance overall security posture.
