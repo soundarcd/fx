@@ -1,14 +1,19 @@
-Infrastructure Overview:
+Environment Segregation:
 
-The infrastructure spans across CTC and ELK datacenters, ensuring resiliency and high availability.
-It includes a mix of Windows and Linux servers (RHEL, Oracle Linux) that host web applications, application services, batch jobs, and databases.
-Applications:
+There is no clear indication that production and non-production environments are segregated into separate networks.
+It is recommended to establish dedicated VNets for production and non-production environments to enhance security and isolation.
+Infrastructure Monitoring:
 
-In addition to CMCC, CMCCP, and CMCP, the infrastructure also supports other applications such as Gateway and Courtyard.
-Server Management:
+The infrastructure should be monitored using Azure-native monitoring tools or a solution recommended by ARB (Architecture Review Board) for better visibility and compliance.
+Traffic Management & Security:
 
-Some servers are planned for decommissioning as part of infrastructure optimization.
-Monitoring & Logging:
+It is recommended to integrate Azure Load Balancer, Azure Front Door, and Web Application Firewall (WAF) to improve traffic distribution, security, and global reachability.
 
-Telegraf and Grafana are used for server monitoring.
-Dynatrace is available for application monitoring and logging to ensure performance visibility and issue detection.
+
+
+Load Balancing:
+
+Each application endpoint is managed by a dedicated F5 load balancer instance, ensuring efficient traffic distribution and high availability.
+CI/CD Infrastructure:
+
+The Jenkins servers are hosted on an on-premises managed Kubernetes cluster, providing containerized CI/CD execution with centralized management.
