@@ -1,4 +1,2 @@
-A separate Jenkins setup for the production environment is crucial to ensure proper isolation and security.
-When migrating CI/CD to GitHub Actions Workflow, it is essential to use self-hosted runners with a dedicated pool for production jobs to maintain strict separation.
-CI jobs should incorporate Static Application Security Testing (SAST) and Software Composition Analysis (SCA) to identify vulnerabilities early in the development process.
-Runtime vulnerability scanning must be implemented to detect zero-day vulnerabilities and enhance overall security posture.
+The system undergoes enterprise-level vulnerability scanning and code-level security scans.
+There is no available information on network-level or application-level penetration testing, posing potential security risks.
