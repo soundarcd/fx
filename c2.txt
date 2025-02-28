@@ -1,14 +1,3 @@
-Microsoft SQL Server 2019 enters the Extended Support phase in February 2025. It will no longer receive bug fixes or feature improvements, only security updates if an Extended Security Update (ESU) plan is purchased.
-
-Security Concerns:
-The application is not subjected to security scanning, increasing the risk of vulnerabilities.
-Secrets are bundled within the WAR file, indicating a lack of shift-left security practices.
-Configuration Management Risks:
-Tomcat and Apache HTTPD configurations are neither version-controlled nor properly maintained, posing security and operational risks.
-CI/CD Weaknesses:
-Production CI/CD jobs are not isolated from non-production environments, leading to potential operational risks and release management issues.
-Scalability and Reliability Concerns:
-The application's dependency on sticky sessions limits scalability and impacts reliability.
-Data Growth & Performance Impact:
-The lack of a data retention and archival policy results in linear or even exponential database growth.
-Uncontrolled data expansion poses risks to application performance and user experience.
+CM applications handle PHI and PII data and must adhere to HIPAA compliance standards to ensure data security and privacy.
+The existence of security scanning steps in Jenkins jobs is unknown and is assumed to be nonexistent, posing a potential risk.
+The Jenkins server for the production environment is not isolated from non-production environments, increasing the risk of unauthorized access and deployment inconsistencies.
