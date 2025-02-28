@@ -1,11 +1,14 @@
-Containerization & Deployment:
-All three CM applications should be containerized and deployed to Azure Kubernetes Service (AKS) for improved scalability and management.
-Horizontal scalability can be fully leveraged if shared session management is implemented, eliminating the need for sticky sessions.
-API Modernization:
-API gateways should be introduced to manage and secure API traffic after a clear separation of backend and frontend services.
-Database Modernization:
-The self-managed Microsoft SQL Server should be migrated to a managed SQL Server instance, ensuring better availability, automated maintenance, and security compliance.
-Regular backups should align with Recovery Point Objectives (RPO) to prevent data loss.
-Oracle Database Migration:
-The on-prem Oracle database should be migrated to a self-managed Oracle instance in the cloud.
-Active-passive replication should be implemented to maintain high availability, eliminating the need to connect from the cloud to an on-premises database.
+Infrastructure Overview:
+
+The infrastructure spans across CTC and ELK datacenters, ensuring resiliency and high availability.
+It includes a mix of Windows and Linux servers (RHEL, Oracle Linux) that host web applications, application services, batch jobs, and databases.
+Applications:
+
+In addition to CMCC, CMCCP, and CMCP, the infrastructure also supports other applications such as Gateway and Courtyard.
+Server Management:
+
+Some servers are planned for decommissioning as part of infrastructure optimization.
+Monitoring & Logging:
+
+Telegraf and Grafana are used for server monitoring.
+Dynatrace is available for application monitoring and logging to ensure performance visibility and issue detection.
