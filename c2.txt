@@ -1,16 +1,25 @@
-Data Management Gaps:
+Infrastructure Utilization:
 
-There are no defined data backup policies, posing a risk to data availability and recovery.
-There are no data retention policies in place, leading to uncontrolled data accumulation.
-Data Growth & Volume:
+Grafana metrics indicate that the provisioned infrastructure is underutilized, suggesting opportunities for optimization and cost reduction.
+Server Decommissioning:
 
-The data size is in terabytes (TB), with records dating back 30 years.
-The data is expected to grow at a rate of 30% year over year (YoY), increasing storage demands and potential performance risks.
+Some servers have been identified for decommissioning, which can further streamline resource usage and reduce operational overhead.
+Database Support Lifecycle:
 
-Establish Data Backup Policies:
+Microsoft SQL Server 2019 has reached the end of mainstream support and has entered the extended support phase.
+This transition may lead to additional support costs or necessitate an upgrade to a supported version to ensure continued security and compliance.
 
-Define data backup policies aligned with business continuity planning (BCP) to ensure data availability, recovery, and resilience against failures.
-Implement Data Retention Policies:
 
-Define data retention policies to purge or archive old data, reducing storage growth and improving system performance.
-Proper data retention will also help minimize legal liabilities associated with PII, ensuring compliance with regulatory requirements.
+
+
+Application Modernization:
+
+Rearchitect applications into multiple containerized services, separating backend and frontend components.
+This approach enables better scalability, orchestration, and resource efficiency.
+Database Migration:
+
+Migrate Microsoft SQL Server to the cloud, leveraging managed services for automated backups, maintenance, and high availability, reducing manual configuration and operational overhead.
+Adoption of Azure Native Services:
+
+Transition to Azure-native solutions such as Azure Load Balancer, API Gateway, Front Door, WAF, Monitoring, and Logging.
+This enhances performance, security, and observability, while reducing reliance on manually managed infrastructure.
