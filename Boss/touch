@@ -1,1 +1,110 @@
-https://teams.microsoft.com/l/meetup-join/19:meeting_ZGMzMDU3YjYtMjc0OC00YTk3LWEzYzAtNTdmNzFhYjY1MGE1@thread.v2/0?context=%7B%22Tid%22:%22db05faca-c82a-4b9d-b9c5-0f64b6755421%22,%22Oid%22:%22ccb4a15d-beaf-462a-9610-306eb13a74d1%22%7D
+BOSS - Business Operations Support System
+
+UHGWM110-002777
+
+
+BOSS (Business Operations Support System) is a business initiative to establish a central repository to serve as the "source of truth" system for Customer (that we are serving), Product (that we have developed) and Service Agreement (that we have sold to customer). BOSS will result in streamlining the end-to-end business process, simplifying business communication, driving operational consistency, and tracking the commitments to the customers. BOSS application is the source of truth for products, customers and service agreements (what products customers purchased). Brent Wilke 2013 01 15IT Ownership change from Vankirk-Smith, Judy to Wilde, AndyDuBois, Peter 2013 10 15IT Ownership change from Wilde, Andy to Vankirk-Smith, Judy 
+
+
+Business Owner	Daniel Van Orsow Sparq
+dan.vanorsow@optum.com 
+Service-Level Owner	Gayathri Manukondu Sparq
+gayathri_manukondu@optum.com 
+Technical Owner	Vivek Prasann Sparq
+vivek_prasann@optum.com 
+URLs	
+Environment URL Stage:
+http://bossstg.uhc.com/
+
+Environment URL Production:
+https://bossprd.uhc.com/Home
+
+Created On 	Aug 9, 2010, 12:00:00?AM 
+Updated On 	Feb 28, 2025, 3:01:37?PM 
+
+
+
+--------------------------------------------------------
+
+CI Central	CI10136706  
+ServiceNow	View  
+ASK ID	UHGWM110-002777 
+Application	BOSS - Business Operations Support System
+Application Monitoring	
+     
+Is CBA	
+Is OFE	
+Common Names	BOSS`BOSS - BUSINESS OPERATIONS SUPPORT SYSTEM`BILL OF SALES SYSTEM`HEADWATERS
+Sub Type	Service 
+Status	Active 
+Environment	Production 
+Lines of Business	OH & Enterprise Clinical Tech
+Supporting Workgroup	BOSS (SCS) - APP   Is War Room Pageable
+Service Impact	CBA 
+Highest Priority Level	Priority 1 
+Tier 1 Vbf Service	
+PCI	
+Bank	
+Support Ready	
+Summary	CBA 
+Business Owner	Daniel Van Orsow Sparq
+dan.vanorsow@optum.com 
+Service Level Owner	Gayathri Manukondu Sparq
+gayathri_manukondu@optum.com 
+Site Reliability Engineers (SRE)	
+Drew Johnson Sparq
+drew.e.johnson@optum.com 
+Delegates	
+Daniel Broin Sparq
+daniel.broin@optum.com 
+Mark Fors Sparq
+mark_fors@optum.com 
+Jennifer Garber Sparq
+jennifer.garber@optum.com 
+Ashish Saxena Sparq
+ashish_saxena21@optum.com 
+Jason Stevens Sparq
+jason.r.stevens@optum.com 
+Created On 	Aug 3, 2020, 4:10:52?PM 
+Updated On 	Mar 31, 2025, 9:35:06?PM 
+
+
+----------------------------------------------------------------
+CDB - CONSUMER DATABASE SYSTEM	CI10136168		Active	Production		
+        
+LOAD BALANCERS	CI10127721		Active	Production		
+ 
+MICROSOFT AZURE STACK	CI104932998		Active	Production		
+   
+OPTUM POPULATION RULES SERVICE	CI10867555		Active	Production		
+ 
+STARGATE API GATEWAY	CI61054925		Active	Production		
+     
+UHG DATA LAKE	CI11224893		Active	Production		
+     ---------------------------------------------------------------------
+BOSS (Business Operations Support System) is a business initiative to establish a central repository to serve as the "source of truth" system for Customer (that we are serving), Product (that we have developed) and Service Agreement (that we have sold to customer). BOSS will result in streamlining the end-to-end business process, simplifying business communication, driving operational consistency, and tracking the commitments to the customers. BOSS application is the source of truth for products, customers and service agreements (what products customers purchased). Brent Wilke 2013 01 15IT Ownership change from Vankirk-Smith, Judy to Wilde, AndyDuBois, Peter 2013 10 15IT Ownership change from Wilde, Andy to Vankirk-Smith, Judy
+Aliases
+BOSS
+Bill of Sales System
+Headwaters
+BOSS - Business Operations Support System
+Category
+Application
+Lifecycle Stage
+Production
+Acquired Entity
+Not Applicable
+Software Type
+UHG Product
+Enclave Env.
+General Hosting (Internal, Cloud, or Vendor hosted)
+Disaster Recovery Reference(s)
+APP0002214
+Billing Business Seg
+Optum Tech - IT Optimization
+Created
+Monday, August 9, 2010 at 5:30:00 AM GMT+5:30
+Last Updated
+Friday, February 28, 2025 at 8:31:37 PM GMT+5:30
+
+-----------------------------------------------------------------------
