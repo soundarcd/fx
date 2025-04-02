@@ -1,9 +1,11 @@
-ITSM Environment,ITSM FQDN,ITSM Operating System,Data Source,CPU Count,CPU Type,Location,Memory,OS,OS Version,Support Stage,Days Current Stage,Aquisition Date,Lifecycle Date,Apex Hostname,Apex Has Current Metrics,Apex Dashboard Url,Source Url
-Production,apvep39146.ms.ds.uhc.com,Microsoft Windows Server 2016,InfraRED,6,,CTC,12,windows,,Retired,,,,apvep39146,false,https://apex.optum.com/hostview?host=apvep39146,/infrared/apvep39146
-Production,ep24db01.uhc.com,Exadata DB Server Node,InfraRED,64,,ELR,2048,linux,Oracle Linux 4/5/6 (64-bit),Steady State,,,,ep24db01,false,https://apex.optum.com/hostview?host=ep24db01,/infrared/ep24db01
-Production,ep24db02.uhc.com,Exadata DB Server Node,InfraRED,64,,ELR,2048,linux,Oracle Linux 4/5/6 (64-bit),Steady State,,,,ep24db02,false,https://apex.optum.com/hostview?host=ep24db02,/infrared/ep24db02
-Production,ep72db01.uhc.com,Exadata DB Server Node,InfraRED,64,,CTC,2048,linux,Oracle Linux 4/5/6 (64-bit),Steady State,,,,ep72db01,false,https://apex.optum.com/hostview?host=ep72db01,/infrared/ep72db01
-Production,ep72db02.uhc.com,Exadata DB Server Node,InfraRED,64,,CTC,2048,linux,Oracle Linux 4/5/6 (64-bit),Steady State,,,,ep72db02,false,https://apex.optum.com/hostview?host=ep72db02,/infrared/ep72db02
-Stage,weves16892.ms.ds.uhc.com,Microsoft Windows Server 2012 R2 Standard x64,InfraRED,0,,,0,,,Steady State,,,,weves16892,false,https://apex.optum.com/hostview?host=weves16892,/infrared/weves16892
-Stage,wn000165965.ms.ds.uhc.com,Microsoft windows 2022,InfraRED,8,,CTC,16,windows,Microsoft 2022,Steady State,,,,wn000165965,true,https://apex.optum.com/hostview?host=wn000165965,/infrared/wn000165965
-Production,wp000165966.ms.ds.uhc.com,Microsoft windows 2022,InfraRED,6,,ELR,12,windows,Microsoft 2022,Steady State,,,,wp000165966,true,https://apex.optum.com/hostview?host=wp000165966,/infrared/wp000165966
+Database,Environment,Number of Tables,,,Volume (GB),Expected Growth YoY
+,,BOSS Schema,BOSS_ETL Schema,CDCORADL Schema,,
+HWTDV02,Development,,,,1057,30
+HWTTS04,Test,,,,847,30
+HWTTS05,Test,,,,342,30
+HWTTS06,Test,,,,1007,30
+HWTTS07,Test,,,,1357,30
+HWTTS08,Test,,,,1207,30
+HWTST02,Stage,,,,1337,30
+HWTPR02,Production,,,,1097,30
+HWTPR02_1,DR/Standby,,,,1097,30
