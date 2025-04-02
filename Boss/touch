@@ -108,3 +108,46 @@ Last Updated
 Friday, February 28, 2025 at 8:31:37 PM GMT+5:30
 
 -----------------------------------------------------------------------
+1. What is the total number of databases used by BOSS application? What are they? Environment segregated answer will be awesome.
+HWTDV02 - Development
+HWTTS04 - Test
+HWTTS05 - Test
+HWTTS06 - Test
+HWTTS07 - Test
+HWTTS08 - Test
+HWTST02 - Stage
+HWTPR02 - Production
+HWTPR02_1 - Standby/DR
+2. What is the data volume? A ball park number will suffice.
+Database Total Size of Database 
+HWTDV02 1057 GB
+HWTTS04 847 GB
+HWTTS05 342 GB 
+HWTTS06 1007 GB
+HWTTS07 1357 GB
+HWTTS08 1207 GB
+HWTST02 1337 GB
+HWTPR02 1097 GB
+HWTPR02_1 1097 GB
+3. What is the number of schemas and tables in each database?
+Database Application Schemas & tables
+HWTDV02 BOSS schema - 803 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables
+HWTTS04 BOSS schema - 799 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables 
+HWTTS05 BOSS schema - 789 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables
+HWTTS06 BOSS schema - 797 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables
+HWTTS07 BOSS schema - 793 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables
+HWTTS08 BOSS schema - 792 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables
+HWTST02 BOSS schema - 793 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables 
+HWTPR02 BOSS schema - 792 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables 
+HWTPR02_1 BOSS schema - 792 tables , BOSS_ETL - 9 tables , CDCORADL - 5 tables 
+4. What is the growth rate for past 2 years? Please provide the growth plan if the history is not available. A ball park number will be sufficient. 
+Approximate Database Growth in 2 years:
+HWTDV02 - 145 GB
+HWTTS04 - 120 GB
+HWTTS05 - 48 GB
+HWTTS06 - 140 GB
+HWTTS07 - 179 GB
+HWTTS08 - 176 GB
+HWTST02 - 176 GB
+HWTPR02 - 176 GB
+HWTPR02_1 - 176 GB
