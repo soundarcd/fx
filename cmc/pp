@@ -1,13 +1,14 @@
-Completed technical deep dives on Requirements and Design
-•	Subscriptions, Networking, Database, and IAM
-•	Containerization and Kubernetes
-•	Application source code and dependencies
-•	CI/CD and Automation
-•	BCDR, Migration, and Cutover Strategy
-Completed creation of cloud accounts with funding approval for resource creation
-Completed creation of GitHub Repository for IaC
-Completed access for Terraform Enterprise Workspace
+Current State of GRID Network PoC in CMC
 
-Network and Security designs for Dev, Test, Stage, and Production environments
-Low level designs for Dev, Test, Stage, and Production environments
-Data Migration planning for Dev, Test, Stage, and Production environments
+Completed:
+CMC's non-production subscription has been successfully onboarded to the GRID network.
+GRID network components (VNet with Consul, HAProxy) have been deployed within the subscription.
+Initial validation of cloud-to-on-prem connectivity was performed but was unsuccessful.
+Thomas engaged Benjamin J. Patterson, who provided support for the GRID setup.
+The PoC VNet is now synchronized with the GRID network.
+On-prem Facets has been added to CI Central, a prerequisite for accessing Facets via GRID.
+Next Steps:
+Complete PoC validation on Monday (allowing time for Consul and CI Central synchronization).
+Request CIDR blocks for non-production VNets.
+Register the allocated CIDRs in GRID after VNet creation.
+Validate both cloud-to-on-prem and on-prem-to-cloud connectivity.
