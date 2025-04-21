@@ -4,3 +4,15 @@ StarGate will be replaced with HCP API Gateway
 Mention React as an option component with re-architecture
 Update RPO and RTO numbers and application priority
 Usage of AKS will  be reviewed and discussed during the migration phase.
+
+
+Pavankumar, Adapa and Pannerselvan, Soundrapandian , Thanks for going over the details. Could you please make updates in the ARM deck. 
+Add CDC and direct API consumer as a risk items which need to be mitigated
+Data Migration strategy
+StarGate will be replaced with HCP API Gateway
+Mention React as an option component with re-architecture
+Update RPO and RTO numbers and application priority
+Usage of AKS will  be reviewed and discussed during the migration phase.
+
+Is BOSS API exposed via Stargate that is consumed by 3rd party applications? Only ICUE consumes through Stargate
+Is BOSS DB's CDC publish data to Kafka, that are consumed by downstream applications, and those downstream applications expose API via Stargate to 3rd party applications? Except ICUE remaining applications consume through HCP
