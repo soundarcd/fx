@@ -13,3 +13,110 @@ Complete PoC validation on Monday (allowing time for Consul and CI Central synch
 Request CIDR blocks for non-production VNets from ETIPS.  [CMC Migration Team]
 Register the allocated CIDRs in GRID after VNet creation using Terraform. [CMC Migration Team]
 Validate both cloud-to-on-prem and on-prem-to-cloud connectivity. [CMC Migration Team]
+
+
+
+
+Create Account in HCP with help of Optum App Owner (request new AIDE ID) 
+
+https://docs.hcp.uhg.com/account-manager/overview 
+
+https://console.hcp.uhg.com/account-manager#/account/AIDE_0090093 
+
+Create HCP Account Resource Group with App Owner 
+
+Create HCP Standard Resource Group 
+
+https://docs.hcp.uhg.com/account-manager/create-resource-group 
+
+https://console.hcp.uhg.com/account-manager#/account/AIDE_0090093/resourceGroup/cmc-main-cloud-resource-group-fdc45d0 
+
+Create NonProd Azure subscription from a non Contractor User 
+
+https://docs.hcp.uhg.com/public-cloud-account-management/non-production-public-cloud-account-creation 
+
+https://console.hcp.uhg.com/dashboard/public-cloud/public-cloud-account-management/cmc-main-cloud-resource-group-fdc45d0/cloud-account.v2/azu-complex-medical-conditions-nonprod?activeTab=overview 
+
+Error during provisioning. ServiceNow id: INC42381189 
+
+Request access to: `AZU_104e4de0_0723_4706_8f7e_9ca6c0c9586f_Contributors_JIT` 
+
+Create Immerse Teams 
+
+https://immerse.uhg.com/teams 
+
+Teams: 
+
+cmc-main-cloud-resource-group-admin source is HCP Resource group admin 
+
+cmc-main-cloud-resource-group-contributor source is HCP Resource group contributors 
+
+Create uhg-internal/cmc-terraform repository in Immerse to be used for Azure InfraAsCode 
+
+Configure Programing Access for the uhg-internal/cmc-terraform repo in the HCP Console 
+
+https://docs.hcp.uhg.com/public-cloud/manage-programmatic-access#configure-the-github-repo-as-a-requiredworkflowrepository-for-a-role-set 
+
+Add the repo as contributor AND owner 
+
+The menu wasn't available so a ticket was open 
+
+Issue: the secret.engine.azure.v2 resource containing the ServicePrincipal data for the Account is missing a parent metadata object. 
+
+Fix: Ask PCAM team to fix this 
+
+Setup Terraform Enterprise 
+
+https://docs.hcp.uhg.com/terraform-enterprise 
+
+Secure group needed 
+
+AZU_terraform_enterprise 
+
+ARC_Terraform_Users 
+
+Maintainer/Admin: ARC_Terraform_<AIDE ID>_Write 
+
+Read: ARC_Terraform_<AIDE ID>__Read 
+
+"Newly funded AIDEs will need their project created in Terraform. Please raise an incident to the Terraform Enterprise Service Now assignment group to ask for the project to be created in TFE." 
+
+ServiceNow id: INC42396160 
+
+"Within Two Business Days (Priority 4)" 
+
+Create a Personal User Token 
+
+From: Montplaisir, Dennis J 
+
+In the new teams, the team tokens are managed in vault.uhg.com and are intentionally lived.  
+
+  
+
+You'll have to user a personal token for now. There is some back and forth with the EPL team if they want PRM enabled automation for retrieving that team token (like is done for service principles) or will authenticate directly to vault with OIDC. 
+
+  
+
+Iverson, Matthew D FYI 
+
+We will need to replace that token at a later date by a Team Token 
+
+Create Secret to store TFEToken (using personal one, will need to be replace with Team Token) 
+
+TFE Secret Creation 
+
+name: cmc-tfe-prm-secret-dev 
+
+namespace: cmc-main-cloud-resource-group-fdc45d0 
+
+Using User Token create workspace: `cmc-terraform-dev` with API 
+
+https://github.com/uhg-pipelines/privileged-workflows/blob/main/docs/terraform/azure-tfe-vaulted.md#tfe-workspace-creation 
+
+ 
+
+Access needed: 
+
+Request in Secure Azure Sub access 
+
+Dev: AZU_104e4de0_0723_4706_8f7e_9ca6c0c9586f_Contributors_JIT 
